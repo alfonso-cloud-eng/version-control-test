@@ -15,5 +15,4 @@ spec:
   type: NodePort      # Changed from ClusterIP
 
 changes in main
-
 changes in feature 2
