@@ -13,3 +13,5 @@ spec:
                         # otherwise Kubernetes will choose one for you.
                         # Be careful with manual assignment to avoid conflicts.
   type: NodePort      # Changed from ClusterIP
+
+changes in feature 2
