@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80          # Port the service exposes internally (ClusterIP)
+      targetPort: 80    # Port on the pods where traffic should go (matches containerPort)
+      # nodePort: 30080 # Optional: You can specify a port in the NodePort range,
+                        # otherwise Kubernetes will choose one for you.
+                        # Be careful with manual assignment to avoid conflicts.
+  type: NodePort      # Changed from ClusterIP
