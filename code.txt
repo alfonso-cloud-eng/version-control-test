@@ -8,7 +8,6 @@ spec:
   ports:
     - protocol: TCP
       port: 50          # Port the service exposes internally (ClusterIP)
-      port: 2OO          # Port the service exposes internally (ClusterIP)
       targetPort: 40    # Port on the pods where traffic should go (matches containerPort)
       # nodePort: 30080 # Optional: You can specify a port in the NodePort range,
                         # otherwise Kubernetes will choose one for you.
